@@ -24,5 +24,12 @@ function main() {
     var n = parseInt(readLine());
     arr = readLine().split(' ');
     arr = arr.map(Number);
+    var finalOutput = "";
+    var startHere = (arr.length - 1);
+    for(var i = startHere; i>=0; i--){
+        finalOutput += (arr[i] + " ");
+    }
+
+    console.log(finalOutput);
 
 }
